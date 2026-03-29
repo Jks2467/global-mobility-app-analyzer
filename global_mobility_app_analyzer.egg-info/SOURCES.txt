@@ -1,0 +1,6 @@
+README.md
+pyproject.toml
+global_mobility_app_analyzer.egg-info/PKG-INFO
+global_mobility_app_analyzer.egg-info/SOURCES.txt
+global_mobility_app_analyzer.egg-info/dependency_links.txt
+global_mobility_app_analyzer.egg-info/top_level.txt
