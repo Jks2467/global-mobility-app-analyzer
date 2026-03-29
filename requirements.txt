@@ -1,4 +1,5 @@
-pandas 
+setuptools
+pandas
 numpy
 matplotlib
 plotly 
