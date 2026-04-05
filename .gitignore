@@ -2,4 +2,3 @@ artifacts
 .venv
 dbpass.txt
 .env
-research
