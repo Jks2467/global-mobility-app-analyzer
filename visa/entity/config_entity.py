@@ -3,7 +3,7 @@ from visa.constants import *
 from datetime import datetime
 from dataclasses import dataclass
 
-TIMESTAMP = datetime.now().strftime('YYYYMMDD_HHMMSS')
+TIMESTAMP = datetime.now().strftime('%Y%m%d_%H%M%S')
 
 @dataclass
 class TrainingPipelineConfig:

@@ -1,0 +1,17 @@
+[2026-04-11 11:17:33,078] - INFO - Starting Training Pipeline
+[2026-04-11 11:17:33,078] - INFO - Starting data ingestion
+[2026-04-11 11:17:33,078] - INFO - Extracting data from MongoDB Collection
+[2026-04-11 11:17:33,727] - INFO - Successfully connected to MongoDB.
+[2026-04-11 11:17:37,326] - INFO - Dataframe Shape: (25480, 12)
+[2026-04-11 11:17:37,327] - INFO - Exporting data to feature store: artifact\20260411_111732\data_ingestion\feature_store
+[2026-04-11 11:17:37,382] - INFO - Data exported to feature store successfully
+[2026-04-11 11:17:37,382] - INFO - Exported data into feature store. DF Shape : (25480, 12)
+[2026-04-11 11:17:37,386] - INFO - Splitting data into train and test sets
+[2026-04-11 11:17:37,391] - INFO - Split done Train Shape : (20384, 12) and Test Shape: (5096, 12)
+[2026-04-11 11:17:37,392] - INFO - Exporting Data to Train and Test Folders
+[2026-04-11 11:17:37,456] - INFO - Successfuly exported the split data
+[2026-04-11 11:17:37,457] - INFO - Successfully split the data.
+[2026-04-11 11:17:37,457] - INFO - Data Ingestion Artifact initialized: DataIngestionArtifact(train_file_path='artifact\\20260411_111732\\data_ingestion\\ingested\\train.csv', test_file_path='artifact\\20260411_111732\\data_ingestion\\ingested\\test.csv')
+[2026-04-11 11:17:37,463] - INFO - Data Ingestion completed: DataIngestionArtifact(train_file_path='artifact\\20260411_111732\\data_ingestion\\ingested\\train.csv', test_file_path='artifact\\20260411_111732\\data_ingestion\\ingested\\test.csv')
+[2026-04-11 11:17:37,463] - INFO - Data Ingestion Artifact: DataIngestionArtifact(train_file_path='artifact\\20260411_111732\\data_ingestion\\ingested\\train.csv', test_file_path='artifact\\20260411_111732\\data_ingestion\\ingested\\test.csv')
+[2026-04-11 11:17:37,463] - INFO - Training Pipeline completed successfully
