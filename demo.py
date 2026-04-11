@@ -1,5 +1,6 @@
-from visa.logger import logging
+from visa.pipeline.training_pipeline import TrainingPipeline
 
-logging.info("Just testing demo Logging")
+pipeline = TrainingPipeline()
 
+pipeline.run_pipeline()
 

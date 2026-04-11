@@ -5,11 +5,15 @@ import numpy as np
 from visa.constants import DB_NAME, MONGODB_URL
 from dotenv import load_dotenv
 import os
+from pathlib import Path
 
-load_dotenv()
+env_path = os.path.join(Path.cwd(), '.env')
 
-db = os.getenv(DB_NAME)
-url = os.getenv(MONGODB_URL)
+load_dotenv(env_path)
+print(env_path)
+
+db = DB_NAME
+url = MONGODB_URL
 
 class VisaData:
     def __init__(self):
@@ -21,7 +25,7 @@ class VisaData:
     def get_collection_as_df(self, collection_name:str, database_name:Optional[str]= None) -> pd.DataFrame:
         try:
             if database_name is None:
-                collection = self.mongo_client.database[collection_name]
+                collection = self.mongo_client[db][collection_name]
             else:
                 collection = self.mongo_client[database_name][collection_name]
             

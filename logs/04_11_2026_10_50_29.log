@@ -1,0 +1,4 @@
+[2026-04-11 10:50:29,738] - INFO - Starting Training Pipeline
+[2026-04-11 10:50:29,738] - INFO - Starting data ingestion
+[2026-04-11 10:50:29,738] - INFO - Extracting data from MongoDB Collection
+[2026-04-11 10:50:29,738] - ERROR - Error connecting to MongoDB: MongoDB URL is not set in environment variables.

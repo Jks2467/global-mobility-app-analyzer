@@ -5,7 +5,7 @@ from pymongo import MongoClient
 import certifi
 
 ca = certifi.where()
-mongo_db_url = os.getenv(MONGODB_URL)
+mongo_db_url = MONGODB_URL
 
 class MongoDBConnection:
     Client = None

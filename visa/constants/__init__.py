@@ -9,8 +9,9 @@ env_path = os.path.join(Path.cwd(), '.env')
 
 load_dotenv(env_path)
 
+
 # Database details
-MONGODB_URL = os.environ['CONN_STRING']
+MONGODB_URL = os.environ['MONGODB_URL']
 DB_NAME=os.environ['DB_NAME']
 COLLECTION_NAME=os.environ['COLLECTION_NAME']
 

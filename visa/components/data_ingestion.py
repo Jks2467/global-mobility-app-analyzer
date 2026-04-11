@@ -4,6 +4,7 @@ from visa.data_access.visa_data import VisaData
 from visa.logger import logging
 import os
 from sklearn.model_selection import train_test_split
+from visa.entity.artifact_entity import DataIngestionArtifact
 
 
 class DataIngestion:
@@ -44,3 +45,21 @@ class DataIngestion:
             logging.info("Successfuly exported the split data")
         except Exception as e:
             raise Exception(f"Error splitting the data: {e}")
+        
+
+    def initiate_data_ingestion(self) -> DataIngestionArtifact:
+        try:
+            dataframe = self.export_data_into_feature_store()
+            logging.info(f"Exported data into feature store. DF Shape : {dataframe.shape}")
+
+            self.split_data_as_train_test(dataframe=dataframe)
+            logging.info(f"Successfully split the data.")
+
+            data_ingestion_artifact = DataIngestionArtifact(train_file_path=self.data_ingestion_config.training_dir,
+                                                            test_file_path=self.data_ingestion_config.test_dir)
+            
+            logging.info(f"Data Ingestion Artifact initialized: {data_ingestion_artifact}")
+            return data_ingestion_artifact
+        except Exception as e:
+            raise Exception(f"Error in data ingestion artifact {e}")
+
