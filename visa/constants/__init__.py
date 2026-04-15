@@ -37,3 +37,8 @@ DATA_INGESTION_DIR:str = 'data_ingestion'
 FEATURE_STORE_DIR:str = 'feature_store'
 INGESTED_DIR:str = 'ingested'
 TRAIN_TEST_SPLIT_RATIO: float = 0.2
+
+# Data Validation Directories constants
+DATA_VALIDATION_DIR:str = 'data_validation'
+DATA_VALIDATION_DRIFT_REPORT_DIR:str = 'drift_report'
+DATA_VALIDATION_DRIFT_REPORT_FILENAME:str = 'report.yaml'

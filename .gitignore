@@ -3,3 +3,5 @@ artifacts
 dbpass.txt
 .env
 artifact
+logs
+
